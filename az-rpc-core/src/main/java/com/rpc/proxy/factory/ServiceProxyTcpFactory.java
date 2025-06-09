@@ -1,11 +1,12 @@
-package com.rpc.proxy;
+package com.rpc.proxy.factory;
 
 import com.rpc.RpcApplication;
-import com.rpc.proxy.factory.ServiceProxyTcp;
+import com.rpc.proxy.MockServiceProxy;
+import com.rpc.proxy.ServiceProxyTcp;
 
 import java.lang.reflect.Proxy;
 
-public class ServiceProxyFactory {
+public class ServiceProxyTcpFactory {
     /**
      * 获取代理对象
      * @param serviceClass

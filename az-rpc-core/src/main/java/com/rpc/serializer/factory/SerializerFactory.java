@@ -1,5 +1,7 @@
-package com.rpc.serializer;
+package com.rpc.serializer.factory;
 
+import com.rpc.serializer.JDKSerializer;
+import com.rpc.serializer.Serializer;
 import com.rpc.spi.SpiLoader;
 
 import java.util.HashMap;
@@ -14,6 +16,9 @@ import java.util.Map;
  * final Serializer serializer = SerializerFactory.getInstance(RpcApplicationConfig.getInstance().getSerializer());
  */
 public class SerializerFactory {
+    /**
+     * 通过SPI机制(用于创建对应的实例)
+     */
     static {
         SpiLoader.load(Serializer.class);
     }

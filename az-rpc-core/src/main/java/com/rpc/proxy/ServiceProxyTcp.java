@@ -1,4 +1,4 @@
-package com.rpc.proxy.factory;
+package com.rpc.proxy;
 
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.util.IdUtil;
@@ -15,9 +15,9 @@ import com.rpc.protocol.ProtocolMessage;
 import com.rpc.protocol.ProtocolMessageDecoder;
 import com.rpc.protocol.ProtocolMessageEncoder;
 import com.rpc.registry.Registry;
-import com.rpc.registry.RegistryFactory;
+import com.rpc.registry.factory.RegistryFactory;
 import com.rpc.serializer.Serializer;
-import com.rpc.serializer.SerializerFactory;
+import com.rpc.serializer.factory.SerializerFactory;
 import io.vertx.core.Vertx;
 import io.vertx.core.buffer.Buffer;
 import io.vertx.core.net.NetClient;
@@ -28,7 +28,7 @@ import java.lang.reflect.Method;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
-public class ServiceProxyTcp implements InvocationHandler {
+public class  ServiceProxyTcp implements InvocationHandler {
 
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {

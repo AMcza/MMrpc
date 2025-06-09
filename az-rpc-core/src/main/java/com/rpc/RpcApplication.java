@@ -4,7 +4,7 @@ import com.rpc.config.RpcConfig;
 import com.rpc.constant.RpcConstant;
 import com.rpc.registry.Registry;
 import com.rpc.config.RegistryConfig;
-import com.rpc.registry.RegistryFactory;
+import com.rpc.registry.factory.RegistryFactory;
 import com.rpc.utils.ConfigUtils;
 import lombok.extern.slf4j.Slf4j;
 
@@ -53,6 +53,9 @@ public class RpcApplication {
      * @return
      */
     public static RpcConfig getRpcConfig(){
+        /**
+         * 判断配置信息是否为空,如何为空就初始化
+         */
         if(rpcConfig==null){
             synchronized (RpcApplication.class){
                 if(rpcConfig==null){

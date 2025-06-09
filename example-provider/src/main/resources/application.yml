@@ -1,0 +1,5 @@
+rpc:
+    name: yurpc
+    serializer: hessian
+    serverPort: 8082
+    version: 2.0

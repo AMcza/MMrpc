@@ -3,8 +3,7 @@ package com.rpc.config;
 import com.rpc.constant.LoadBalancerKeys;
 import com.rpc.constant.RetryStrategyKeys;
 import com.rpc.constant.TolerantStrategyKeys;
-import com.rpc.fault.tolerant.TolerantStrategy;
-import com.rpc.serializer.SerializerKeys;
+import com.rpc.constant.SerializerKeys;
 import lombok.Data;
 
 @Data

@@ -1,5 +1,7 @@
-package com.rpc.registry;
+package com.rpc.registry.factory;
 
+import com.rpc.registry.EtcdRegistry;
+import com.rpc.registry.Registry;
 import com.rpc.spi.SpiLoader;
 
 public class RegistryFactory {

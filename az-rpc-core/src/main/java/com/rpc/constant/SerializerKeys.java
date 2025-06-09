@@ -1,4 +1,4 @@
-package com.rpc.serializer;
+package com.rpc.constant;
 
 /**
  * 序列化器键名

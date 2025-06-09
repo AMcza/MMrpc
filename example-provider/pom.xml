@@ -7,7 +7,7 @@
     <version>1.0-SNAPSHOT</version>
   </parent>
   <artifactId>example-provider</artifactId>
-  <packaging>pom</packaging>
+  <packaging>war</packaging>
   <name>example-provider</name>
   <url>http://maven.apache.org</url>
   <dependencies>
@@ -34,12 +34,13 @@
       <version>1.18.30</version>
       <scope>provided</scope>
     </dependency>
+
     <dependency>
-      <groupId>org.example</groupId>
-      <artifactId>az-rpc-core</artifactId>
-      <version>1.0-SNAPSHOT</version>
-      <scope>compile</scope>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-web</artifactId>
+      <version>2.2.2.RELEASE</version>
     </dependency>
+
   </dependencies>
 
   <build>

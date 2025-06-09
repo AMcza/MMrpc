@@ -6,7 +6,7 @@ import com.rpc.enums.ProtocolMessageTypeEnum;
 import com.rpc.model.RpcRequest;
 import com.rpc.model.RpcResponse;
 import com.rpc.serializer.Serializer;
-import com.rpc.serializer.SerializerFactory;
+import com.rpc.serializer.factory.SerializerFactory;
 import io.vertx.core.buffer.Buffer;
 
 import java.io.IOException;

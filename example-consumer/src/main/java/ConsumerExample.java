@@ -1,21 +1,24 @@
-package com.comsumer;
-
+import com.rpc.bootstrap.ConsumerBootstrap;
 import com.rpc.proxy.factory.ServiceProxyTcpFactory;
 import example.common.model.User;
 import example.common.service.UserService;
 
-public class test2 {
+public class ConsumerExample {
+
     public static void main(String[] args) {
+        ConsumerBootstrap.init();
+
+        //获取代理
         UserService userService= ServiceProxyTcpFactory.getProxy(UserService.class);
-        User user=new User();
-        user.setName("da");
+        User user = new User();
+        user.setName("cmm");
+
+        //调用
         User newUser=userService.getUser(user);
-        if(user!=null){
-            System.out.println(newUser);
+        if(newUser!=null){
+            System.out.println(newUser.getName());
         }else{
-            System.out.println("null");
+            System.out.println("调用失败");
         }
-        long number=userService.getNumber();
-        System.out.println(number);
     }
 }

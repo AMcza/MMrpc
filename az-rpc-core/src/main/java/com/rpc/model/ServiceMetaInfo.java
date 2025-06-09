@@ -1,12 +1,16 @@
 package com.rpc.model;
 
 import cn.hutool.core.util.StrUtil;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * 服务元信息(注册信息)
  */
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class ServiceMetaInfo {
     /**
      * 服务名称

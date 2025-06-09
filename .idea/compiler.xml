@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="az-rpc-core" />
         <module name="az-rpc-easy" />
+        <module name="example-provider" />
         <module name="example-common" />
         <module name="example-consumer" />
       </profile>

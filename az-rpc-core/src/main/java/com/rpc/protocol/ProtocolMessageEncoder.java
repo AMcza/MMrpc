@@ -2,7 +2,7 @@ package com.rpc.protocol;
 
 import com.rpc.enums.ProtocolMessageSerializerEnum;
 import com.rpc.serializer.Serializer;
-import com.rpc.serializer.SerializerFactory;
+import com.rpc.serializer.factory.SerializerFactory;
 import io.vertx.core.buffer.Buffer;
 
 import java.io.IOException;

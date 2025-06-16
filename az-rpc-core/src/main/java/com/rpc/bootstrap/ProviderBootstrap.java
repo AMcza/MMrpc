@@ -7,7 +7,7 @@ import com.rpc.model.ServiceMetaInfo;
 import com.rpc.model.ServiceRegisterInfo;
 import com.rpc.registry.LocalRegistry;
 import com.rpc.registry.Registry;
-import com.rpc.registry.factory.RegistryFactory;
+import com.rpc.registry.RegistryFactory;
 import com.rpc.server.tcp.VertxTcpServer;
 
 import java.util.List;

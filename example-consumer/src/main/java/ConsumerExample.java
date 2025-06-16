@@ -1,5 +1,6 @@
+import com.rpc.RpcApplication;
 import com.rpc.bootstrap.ConsumerBootstrap;
-import com.rpc.proxy.factory.ServiceProxyTcpFactory;
+import com.rpc.proxy.ServiceProxyFactory;
 import example.common.model.User;
 import example.common.service.UserService;
 
@@ -9,7 +10,7 @@ public class ConsumerExample {
         ConsumerBootstrap.init();
 
         //获取代理
-        UserService userService= ServiceProxyTcpFactory.getProxy(UserService.class);
+        UserService userService= ServiceProxyFactory.getProxy(UserService.class);
         User user = new User();
         user.setName("cmm");
 
